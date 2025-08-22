@@ -13,7 +13,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 // ✅ Updated tax-related titles & descriptions (same as given)
-const TaxandgstcomplianceTitle = [
+const TaxAndGSTComplianceTitle  = [
   {
     title: "Income Tax Return Filing",
     desc: "File your income tax returns.",
@@ -95,7 +95,7 @@ const AnimatedSection = ({ children }) => {
 };
 
 // ✅ Main Component
-const Taxandgstcompliance = () => {
+const TaxAndGSTCompliance  = () => {
   return (
     <>
       {/* ✅ Hero Section with Background Image */}
@@ -170,7 +170,7 @@ const Taxandgstcompliance = () => {
             <div className="pt-4 pb-2 px-4 sm:px-8 md:px-16 lg:px-20 ">
               <div className="w-full mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {TaxandgstcomplianceTitle.map((item, index) => (
+                  {TaxAndGSTComplianceTitle .map((item, index) => (
                     <ScrollFadeUp key={index} delay={index * 0.1}>
                     <div
                       key={index}
@@ -221,4 +221,4 @@ const Taxandgstcompliance = () => {
   );
 };
 
-export default Taxandgstcompliance;
+export default TaxAndGSTCompliance ;

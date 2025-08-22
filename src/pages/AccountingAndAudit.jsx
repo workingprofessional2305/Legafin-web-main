@@ -16,7 +16,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-const AccountingandauditTitle = [
+const AccountingAndAuditTitle  = [
   {
     title: "Accounting",
     desc: "Manage your accounting needs.",
@@ -168,7 +168,7 @@ const AccountingAndAudit = () => {
             <div className="pt-4 pb-2 px-4 sm:px-8 md:px-16 lg:px-20 ">
               <div className="w-full mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {AccountingandauditTitle.map((item, index) => (
+                  {AccountingAndAuditTitle.map((item, index) => (
                     <ScrollFadeUp key={index} delay={index * 0.1}>
                       <div
                         key={index}

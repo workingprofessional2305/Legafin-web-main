@@ -13,7 +13,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 // ✅ Updated Title Array with Better Relevant Icons
-const secretarialauditandduediligenceTitle = [
+const SecretarialAuditAndDueDiligenceTitle  = [
   {
     title: "Conducting Secretarial Audit",
     desc: "Perform secretarial audits.",
@@ -145,7 +145,7 @@ const SecretarialAuditAndDueDiligence = () => {
         <div className="pt-4 pb-2 px-4 sm:px-8 md:px-20 lg:px-20 justify-center">
   <div className="w-full flex justify-center">
     <div className=" my-8 px-6 sm:px-6 lg:px-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 justify-center">
-      {secretarialauditandduediligenceTitle.map((item, index) => (
+      {SecretarialAuditAndDueDiligenceTitle.map((item, index) => (
         <ScrollFadeUp key={index} delay={index * 0.1}>
         <div
           key={index}

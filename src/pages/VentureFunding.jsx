@@ -11,7 +11,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-const VenturefundingTitle = [
+const VentureFundingTitle  = [
   {
     title: "Structuring the Fund Onshore and Offshore",
     desc: "Structure funds both onshore and offshore.",
@@ -85,7 +85,7 @@ const AnimatedSection = ({ children }) => {
   );
 };
 
-const Venturefunding = () => {
+const VentureFunding  = () => {
   return (
     <div>
       <section className="relative z-10 overflow-hidden pt-20">
@@ -159,7 +159,7 @@ const Venturefunding = () => {
             <div className="pt-4 pb-2 px-4 sm:px-8 md:px-16 lg:px-20 ">
               <div className="w-full mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {VenturefundingTitle.map((item, index) => (
+                  {VentureFundingTitle.map((item, index) => (
                     <ScrollFadeUp key={index} delay={index * 0.1}>
                       <div
                         key={index}
@@ -210,4 +210,4 @@ const Venturefunding = () => {
   );
 };
 
-export default Venturefunding;
+export default VentureFunding ;

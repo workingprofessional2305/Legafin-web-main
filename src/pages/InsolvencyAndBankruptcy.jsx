@@ -13,7 +13,7 @@ import { useEffect } from "react";
 
 
 // ✅ Updated Title Array with Relevant Icons
-const insolvencyTitle = [
+const InsolvencyAndBankruptcyTitle = [
   {
     title: "Representing on Behalf of Company & Creditors",
     desc: "Represent companies and creditors in insolvency matters.",
@@ -78,7 +78,7 @@ const AnimatedSection = ({ children }) => {
 };
 
 
-const Insolvencyandbankruptcy = () => {
+const InsolvencyAndBankruptcy  = () => {
   return (
     <div>
       {/* ✅ Hero Section */}
@@ -154,7 +154,7 @@ const Insolvencyandbankruptcy = () => {
           <div className="pt-4 pb-2 px-4 sm:px-8 md:px-16 lg:px-20">
             <div className="w-full mx-auto">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {insolvencyTitle.map((item, index) => (
+                {InsolvencyAndBankruptcy.map((item, index) => (
                   <ScrollFadeUp key={index} delay={index * 0.1}>
                   <div
                     key={index}
@@ -205,4 +205,4 @@ const Insolvencyandbankruptcy = () => {
   );
 };
 
-export default Insolvencyandbankruptcy;
+export default InsolvencyAndBankruptcy;

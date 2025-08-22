@@ -25,7 +25,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 // ✅ Secretarial Services List with Relevant Icons
-const CompanysecretarialservicesTitle = [
+const CompanySecretarialServicesTitle = [
   { title: "Annual Compliances", desc: "Ensure annual compliance.", icon: <FaClipboardCheck /> }, // ✅ Checklist
   { title: "Increase in Share Capital", desc: "Increase your company's share capital.", icon: <FaChartLine /> }, // 📈 Growth
   { title: "Rights Issue", desc: "Conduct a rights issue.", icon: <FaHandHoldingUsd /> }, // 💰 Share issue
@@ -88,7 +88,7 @@ const AnimatedSection = ({ children, direction = "up" }) => {
   );
 };
 
-const Companysecretarialservices = () => {
+const CompanySecretarialServices  = () => {
   return (
     <>
       <section className="relative z-10 overflow-hidden pt-20">
@@ -162,7 +162,7 @@ const Companysecretarialservices = () => {
             <div className="pt-4 pb-2 px-4 sm:px-8 md:px-16 lg:px-20">
               <div className="w-full mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {CompanysecretarialservicesTitle.map((item, index) => (
+                  {CompanySecretarialServicesTitle.map((item, index) => (
                     <ScrollFadeUp key={index} delay={index * 0.1}>
                     <div
                       key={index}
@@ -212,4 +212,4 @@ const Companysecretarialservices = () => {
   );
 };
 
-export default Companysecretarialservices;
+export default CompanySecretarialServices ;

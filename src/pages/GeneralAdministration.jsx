@@ -18,7 +18,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-const GeneraladministrationTitle = [
+const GeneralAdministrationTitle = [
   {
     title: "Industrial Relations",
     desc: "Manage industrial relations.",
@@ -107,7 +107,7 @@ const AnimatedSection = ({ children }) => {
   );
 };
 
-const Generaladministration = () => {
+const GeneralAdministration = () => {
   return (
     <div>
       <section className="relative z-10 overflow-hidden pt-20">
@@ -181,7 +181,7 @@ const Generaladministration = () => {
             <div className="pt-4 pb-2 px-4 sm:px-8 md:px-16 lg:px-20 ">
               <div className="w-full mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {GeneraladministrationTitle.map((item, index) => (
+                  {GeneralAdministrationTitle.map((item, index) => (
                     <ScrollFadeUp key={index} delay={index * 0.1}>
                       <div
                         key={index}
@@ -232,4 +232,4 @@ const Generaladministration = () => {
   );
 };
 
-export default Generaladministration;
+export default GeneralAdministration;

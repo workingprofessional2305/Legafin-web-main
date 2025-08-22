@@ -23,7 +23,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 // ✅ Updated SebicompliancesTitle with individual icons
-const SebicompliancesTitle = [
+const SEBICompliancesTitle  = [
   { title: "Initial Public Offer", desc: "Conduct an IPO.", icon: <FaChartLine /> },
   { title: "Further Public Offer", desc: "Manage further public offers.", icon: <FaArrowUp /> },
   { title: "Takeover", desc: "Handle takeovers.", icon: <FaHandshake /> },
@@ -84,7 +84,7 @@ const AnimatedSection = ({ children }) => {
 };
 
 // ✅ Main Component
-const Sebicompliances = () => {
+const SEBICompliances  = () => {
   return (
     <>
       {/* ✅ Hero Section */}
@@ -157,7 +157,7 @@ const Sebicompliances = () => {
             <div className="pt-4 pb-2 px-4 sm:px-8 md:px-16 lg:px-20 ">
               <div className="w-full mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {SebicompliancesTitle.map((item, index) => (
+                  {SEBICompliancesTitle.map((item, index) => (
                     <ScrollFadeUp key={index} delay={index * 0.1}>
                     <div
                       key={index}
@@ -208,4 +208,4 @@ const Sebicompliances = () => {
   );
 };
 
-export default Sebicompliances;
+export default SEBICompliances;

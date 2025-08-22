@@ -18,7 +18,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 // ✅ Intellectual Property Rights List with Relevant Icons
-const IntellectualpropertyrightsTitle = [
+const IntellectualPropertyRightsTitle  = [
   { title: "Copyright", desc: "Secure copyright for your work.", icon: <FaRegCopyright /> }, // © Copyright
   { title: "Trademark", desc: "Register your trademark.", icon: <FaTrademark /> }, // ™ Trademark
   { title: "IP Search", desc: "Conduct an intellectual property search.", icon: <FaSearch /> }, // 🔍 Search
@@ -74,7 +74,7 @@ const AnimatedSection = ({ children, direction = "up" }) => {
   );
 };
 
-const Intellectualpropertyrights = () => {
+const IntellectualPropertyRights  = () => {
   return (
     <>
       <section className="relative z-10 overflow-hidden pt-20">
@@ -147,7 +147,7 @@ const Intellectualpropertyrights = () => {
             <div className="pt-4 pb-2 px-4 sm:px-8 md:px-16 lg:px-20">
               <div className="w-full mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {IntellectualpropertyrightsTitle.map((item, index) => (
+                  {IntellectualPropertyRightsTitle.map((item, index) => (
                     <ScrollFadeUp key={index} delay={index * 0.1}>
                     <div
                       key={index}
@@ -197,4 +197,4 @@ const Intellectualpropertyrights = () => {
   );
 };
 
-export default Intellectualpropertyrights;
+export default IntellectualPropertyRights ;

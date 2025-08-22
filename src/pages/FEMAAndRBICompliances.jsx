@@ -23,7 +23,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 // ✅ Updated Titles with respective icons
-const FemaandrbicompliancesTitle = [
+const FEMAAndRBICompliancesTitle  = [
   { title: "NBFC", desc: "Comply with NBFC regulations.", icon: <FaUniversity /> },
   { title: "Overseas Direct Investment", desc: "Manage overseas direct investments.", icon: <FaGlobeAsia /> },
   { title: "Foreign Direct Investment", desc: "Handle foreign direct investments.", icon: <FaGlobeAmericas /> },
@@ -84,7 +84,7 @@ const AnimatedSection = ({ children }) => {
 };
 
 // ✅ Main Component
-const Femaandrbicompliances = () => {
+const FemaAndRbiCompliances  = () => {
   return (
     <>
       {/* ✅ Hero Section */}
@@ -156,7 +156,7 @@ const Femaandrbicompliances = () => {
             <div className="pt-4 pb-2 px-4 sm:px-8 md:px-16 lg:px-20 ">
               <div className="w-full mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {FemaandrbicompliancesTitle.map((item, index) => (
+                  {FEMAAndRBICompliancesTitle.map((item, index) => (
                     <ScrollFadeUp key={index} delay={index * 0.1}>
                     <div
                       key={index}
@@ -207,4 +207,4 @@ const Femaandrbicompliances = () => {
   );
 };
 
-export default Femaandrbicompliances;
+export default FemaAndRbiCompliances;
