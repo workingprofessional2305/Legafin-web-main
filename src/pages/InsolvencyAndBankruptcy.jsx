@@ -13,6 +13,24 @@ import { useEffect } from "react";
 
 
 // ✅ Updated Title Array with Relevant Icons
+// const InsolvencyAndBankruptcyTitle = [
+//   {
+//     title: "Representing on Behalf of Company & Creditors",
+//     desc: "Represent companies and creditors in insolvency matters.",
+//     icon: <FaBalanceScale />,
+//   },
+//   {
+//     title: "Performance of Activities of Insolvency Resolution Professional",
+//     desc: "Act as insolvency resolution professionals.",
+//     icon: <MdOutlineBusinessCenter />,
+//   },
+//   {
+//     title: "Litigation Resolution",
+//     desc: "Resolve litigation related to insolvency.",
+//     icon: <MdOutlineGavel />,
+//   },
+// ];
+
 const InsolvencyAndBankruptcyTitle = [
   {
     title: "Representing on Behalf of Company & Creditors",
@@ -20,16 +38,17 @@ const InsolvencyAndBankruptcyTitle = [
     icon: <FaBalanceScale />,
   },
   {
-    title: "Performance of Activities of Insolvency Resolution Professional",
+    title: "Performance of Activities of Insolvency Resolution Professionals",
     desc: "Act as insolvency resolution professionals.",
     icon: <MdOutlineBusinessCenter />,
   },
   {
     title: "Litigation Resolution",
-    desc: "Resolve litigation related to insolvency.",
+    desc: "Assist in legal proceedings related to insolvency.",
     icon: <MdOutlineGavel />,
   },
 ];
+
 
 const fadeUp = {
   hidden: { opacity: 1, y: 50 },
@@ -154,7 +173,7 @@ const InsolvencyAndBankruptcy  = () => {
           <div className="pt-4 pb-2 px-4 sm:px-8 md:px-16 lg:px-20">
             <div className="w-full mx-auto">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {InsolvencyAndBankruptcy.map((item, index) => (
+                {InsolvencyAndBankruptcyTitle.map((item, index) => (
                   <ScrollFadeUp key={index} delay={index * 0.1}>
                   <div
                     key={index}
